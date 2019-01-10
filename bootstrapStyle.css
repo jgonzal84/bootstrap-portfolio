@@ -11,10 +11,8 @@ li+li{
     border-left: 2px solid gray;
 }
 
-.container{
-    padding: 30px;
-    width: 1000px;
-
+.content h1{
+    padding-top: 20px;
 }
 
 .header{
@@ -22,13 +20,19 @@ li+li{
     color: ffffff;
     /* padding-top: 30px; */
     padding-left:20px;
-    min-height: 70px;
     border-bottom: #0c0c0c 3px solid;
+    display: inline-block;
+    width: 100%;
+}
+
+#branding{
+    white-space: nowrap;
 }
 
 .header ul{
     margin: 0;
     padding: 0;
+    float: right;
 }
 
 .container-fluid{
@@ -37,6 +41,7 @@ li+li{
 }
 
 .header a{
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -50,6 +55,10 @@ li+li{
     font-size: 20px;
 }
 
+/* here when its webback and small or extrta small it gets rid of the margins. per the instructions. */
+.webBack .col-xs-12, .webBack .col-sm-12 {
+    margin: none;
+}
 /* .webBack{
     padding: 15px 15px 15px 15px;
 } */
@@ -76,9 +85,11 @@ li+li{
 }
 
 #portfolio, #contactme{
-    width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    float: none;
 }
 
 p{
@@ -97,10 +108,8 @@ p{
 /*we want to put a line height of approx 80 because we looked to match the height of the 'branding' element*/
 .header nav{
     color: rgb(194, 80, 18);
-    line-height: 40px;
     float: right;
-    margin: 10px;
-    padding: 30px
+    padding: 30px 0px;
 }
 
 .current{
