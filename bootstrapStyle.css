@@ -1,4 +1,10 @@
-
+@media(min-width:900px){
+    nav.col-xs-12, nav.col-sm-12 {
+        position: absolute;
+        right: 0px;
+    }
+}
+/* saying if the screen is at least 900 px to put the nav in the top right! */
 
 body{
     font: 15px;
